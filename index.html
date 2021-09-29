@@ -10,6 +10,48 @@
         <link rel="stylesheet" href="assets/css/style.css"/>
     </head>
     <body>
-       sss
+       <nav class="navbar-space-align">
+           <div class="logo-caption">
+               <h1>Budding<span class="text-theme-primary">Tree</span></h1>
+           </div>
+           <a class="btn btn-link">
+                <span class="my-auto postion-relative top-4px">
+                    <i data-feather="lock"></i>
+                </span>
+                <span class="my-auto font-weight-bold">Continue Login</span>
+                <i class="fas fa-arrow-right my-auto pl-3"></i>
+           </a>
+       </nav>
+
+       <section class="landing-container">
+           <article class="w-50">
+                <h2 class="font-weight-light mt-0">
+                    Welcome to Budding Tree. India’s first online shopping from 100% organic verticulture.
+                </h2>
+                <img src="assets/images/landing-banner-infographics.svg"/>
+           </article>
+           <article class="w-50">
+                <form action="/action_page.php">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                
+                    <label for="country">Country</label>
+                    <select id="country" name="country">
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                    </select>
+                
+                    <input type="submit" value="Submit">
+                </form>
+            </article>
+       </section>
+      <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+      <script>
+        feather.replace()
+      </script>
     </body>
 </html>

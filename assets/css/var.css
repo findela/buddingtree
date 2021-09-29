@@ -1,0 +1,7 @@
+/* CSS custom notation (variables) */
+:root {
+    --primary-color: #39B088;
+    --secondary-color: #2C2F3B;
+
+    --primary-font-size: 18px;
+}

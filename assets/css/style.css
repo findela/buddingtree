@@ -1,7 +1,27 @@
 @import "var.css";
+@import "utility.css";
 
 body,html {
     padding: 0;
     margin: 0;
     font-family: 'Ubuntu', sans-serif;
+    font-size: var(--primary-font-size);
+    color: var(--secondary-color);
 }
+
+.navbar-space-align {
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn.btn-link {
+    padding: 20px;
+    display: inline;
+}
+
+.landing-container {
+    padding: 10px 50px;
+    display: flex;
+}
+
