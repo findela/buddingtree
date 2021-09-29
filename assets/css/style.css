@@ -9,6 +9,11 @@ body,html {
     color: var(--secondary-color);
 }
 
+.suffix-note {
+    position: relative;
+    left: 2px;
+}
+
 .navbar-space-align {
     padding: 20px 50px;
     display: flex;

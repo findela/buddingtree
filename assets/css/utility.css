@@ -1,22 +1,74 @@
 .text-theme-primary {
     color: var(--primary-color);
 }
+.bg-theme-primary {
+    background: var(--primary-color);
+}
+.text-theme-secondary {
+    color: var(--secondary-color);
+}
+.bg-theme-secondary {
+    background: var(--secondary-color);
+}
 .w-50 {
     width: 50%;
+}
+
+.w-100 {
+    width: 100%;
 }
 
 .mt-0 {
     margin-top: 0;
 }
+
 .my-auto {
-    margin: 0 auto;
+    margin-top: auto;
+    margin-bottom: auto;
 }
+
 .pl-3 {
     padding-left: 10px;
 }
 
+.pl-2 {
+    padding-left: 5px;
+}
+
 .postion-relative {
     position: relative;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.my-2 {
+    margin: 10px auto;
+}
+
+.my-3 {
+    margin: 15px auto;
+}
+
+.my-4 {
+    margin: 20px auto;
+}
+
+.mx-2 {
+    margin: auto 10px;
+}
+
+.mr-2 {
+    margin-right: 10px;
+}
+
+.mr-1 {
+    margin-right: 5px;
+}
+
+.ml-2 {
+    margin-left: 10px;
 }
 
 .top-4px {
@@ -27,27 +79,27 @@
     font-weight: bold;
 }
 
+.font-weight-normal {
+    font-weight: 400;
+}
+
 .font-weight-light {
     font-weight: 300;
 }
 
-input[type=text], select {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
+input[type=text],
+input[type=password] {
+    padding: 15px 20px;
+    background: #F5F5F5;
+    border: 1px solid #EDEDED;
     border-radius: 4px;
     box-sizing: border-box;
   }
   
-  input[type=submit] {
-    width: 100%;
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
+  button.btn {
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: bold;
     border-radius: 4px;
     cursor: pointer;
   }
@@ -55,3 +107,56 @@ input[type=text], select {
   input[type=submit]:hover {
     background-color: #45a049;
   }
+
+  .border-0 {
+      border: none;
+  }
+
+  hr {
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,.1);
+  }
+
+  .w-30 {
+      width: 30%;
+  }
+
+  .w-40 {
+      width: 40%;
+  }
+
+  .text-center {
+      text-align: center;
+  }
+
+  .justify-content-around {
+      justify-content: space-around;
+  }
+
+  .justify-content-center {
+      justify-content: center;
+  }
+
+  .boder-theme-secondary {
+      border: 1px solid var(--secondary-color);
+  }
+
+  .btn-white {
+      background: #fff;
+  }
+
+  .text-white {
+      color: #ffffff;
+  }
+  
+  .boder-theme-primary {
+    border: 1px solid var(--primary-color);
+  }
+
+  .d-inline {
+      display: inline;
+  }
+
+  .d-inline-flex {
+    display: inline-flex;
+}

@@ -12,14 +12,14 @@
     <body>
        <nav class="navbar-space-align">
            <div class="logo-caption">
-               <h1>Budding<span class="text-theme-primary">Tree</span></h1>
+               <h1>Budding<span class="text-theme-primary suffix-note">Tree</span></h1>
            </div>
            <a class="btn btn-link">
                 <span class="my-auto postion-relative top-4px">
                     <i data-feather="lock"></i>
                 </span>
-                <span class="my-auto font-weight-bold">Continue Login</span>
-                <i class="fas fa-arrow-right my-auto pl-3"></i>
+                <span class="my-auto font-weight-normal">Continue Login</span>
+                <i class="fas fa-arrow-right my-auto pl-2"></i>
            </a>
        </nav>
 
@@ -31,22 +31,36 @@
                 <img src="assets/images/landing-banner-infographics.svg"/>
            </article>
            <article class="w-50">
-                <form action="/action_page.php">
-                    <label for="fname">First Name</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
-                
-                    <label for="lname">Last Name</label>
-                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                
-                    <label for="country">Country</label>
-                    <select id="country" name="country">
-                    <option value="australia">Australia</option>
-                    <option value="canada">Canada</option>
-                    <option value="usa">USA</option>
-                    </select>
-                
-                    <input type="submit" value="Submit">
+               <h2 class="mt-0 font-weight-normal">Let's get started</h1>
+                <form>
+                    <div class="d-flex">
+                        <input type="text" class="w-50 mr-2" name="firstname" placeholder="Your first name..">
+                        <input type="text" class="w-50 ml-2" name="lastname" placeholder="Your last name..">
+                    </div>
+                    <div class="d-flex my-3">
+                        <input type="password" class="w-50 mr-2" name="firstname" placeholder="Your password..">
+                        <input type="password" class="w-50 ml-2" name="lastname" placeholder="Confirm your password..">
+                    </div>
+                    <input type="text" name="firstname" class="w-100" placeholder="Your first name..">
+                    <button class="btn bg-theme-secondary w-100 border-0 text-white my-4">Complete Registration</button>
                 </form>
+
+                <div class="d-flex justify-content-center my-1">
+                    <div class="w-100 d-flex justify-content-around">
+                        <hr class="my-auto w-30 desktop-only border-secondary">
+                        <h3 class="my-auto w-40 text-center font-weight-light">Or Sign-up Using</h5>
+                        <hr class="my-auto w-30 desktop-only border-secondary">
+                    </div>
+                </div>
+
+                <div class="d-md-flex justify-content-center text-center my-4">
+                    <button type="button" class="btn btn-white boder-theme-secondary my-auto d-inline-flex mx-2">
+                        <img alt="google" class="mr-1 my-auto" src="assets/images/google-logo.png" width="25">
+                        <span class="my-auto text-left font-weight-bold">
+                            Continue with Google
+                        </span>
+                    </button>
+                </div>
             </article>
        </section>
       <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
