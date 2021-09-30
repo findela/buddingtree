@@ -161,3 +161,22 @@ input[type=email] {
   .d-inline-flex {
     display: inline-flex;
 }
+
+@media (min-width: 780px) {
+    .d-mobile {
+        display: none !important;
+    }
+
+    .d-desktop {
+        display: block !important;
+    }
+}
+@media (max-width: 780px) {
+    .d-mobile {
+        display: block !important;
+    }
+
+    .d-desktop {
+        display: none !important;
+    }
+}
