@@ -88,8 +88,9 @@
 }
 
 input[type=text],
-input[type=password] {
-    padding: 15px 20px;
+input[type=password],
+input[type=email] {
+    padding: 12px 15px;
     background: #F5F5F5;
     border: 1px solid #EDEDED;
     border-radius: 4px;
@@ -97,11 +98,11 @@ input[type=password] {
   }
   
   button.btn {
-    padding: 10px 15px;
-    font-size: 18px;
-    font-weight: bold;
+    padding: 8px 15px;
+    font-size: 16px;
     border-radius: 4px;
     cursor: pointer;
+    font-weight: 500;
   }
   
   input[type=submit]:hover {

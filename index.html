@@ -2,70 +2,124 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Title</title>
+        <title>Welcome to BuddingTree</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"/>
         <link rel="stylesheet" href="assets/css/style.css"/>
     </head>
     <body>
-       <nav class="navbar-space-align">
-           <div class="logo-caption">
-               <h1>Budding<span class="text-theme-primary suffix-note">Tree</span></h1>
-           </div>
-           <a class="btn btn-link">
-                <span class="my-auto postion-relative top-4px">
-                    <i data-feather="lock"></i>
-                </span>
-                <span class="my-auto font-weight-normal">Continue Login</span>
-                <i class="fas fa-arrow-right my-auto pl-2"></i>
-           </a>
-       </nav>
-
-       <section class="landing-container">
-           <article class="w-50">
-                <h2 class="font-weight-light mt-0">
-                    Welcome to Budding Tree. India’s first online shopping from 100% organic verticulture.
-                </h2>
-                <img src="assets/images/landing-banner-infographics.svg"/>
-           </article>
-           <article class="w-50">
-               <h2 class="mt-0 font-weight-normal">Let's get started</h1>
-                <form>
-                    <div class="d-flex">
-                        <input type="text" class="w-50 mr-2" name="firstname" placeholder="Your first name..">
-                        <input type="text" class="w-50 ml-2" name="lastname" placeholder="Your last name..">
-                    </div>
-                    <div class="d-flex my-3">
-                        <input type="password" class="w-50 mr-2" name="firstname" placeholder="Your password..">
-                        <input type="password" class="w-50 ml-2" name="lastname" placeholder="Confirm your password..">
-                    </div>
-                    <input type="text" name="firstname" class="w-100" placeholder="Your first name..">
-                    <button class="btn bg-theme-secondary w-100 border-0 text-white my-4">Complete Registration</button>
-                </form>
-
-                <div class="d-flex justify-content-center my-1">
-                    <div class="w-100 d-flex justify-content-around">
-                        <hr class="my-auto w-30 desktop-only border-secondary">
-                        <h3 class="my-auto w-40 text-center font-weight-light">Or Sign-up Using</h5>
-                        <hr class="my-auto w-30 desktop-only border-secondary">
-                    </div>
+        <div class="container">
+            <nav class="navbar-space-align">
+                <div class="logo-caption my-auto">
+                    <h2 class="mb-0">
+                        Budding<span class="text-theme-primary">Tree</span>
+                     </h2>
                 </div>
+                <a class="btn btn-link text-dark my-auto">
+                     <span class="my-auto postion-relative" style="top: -2px">
+                         <i data-feather="lock"></i>
+                     </span>
+                     <span class="my-auto font-weight-normal">Continue Login</span>
+                     <i class="fas fa-arrow-right my-auto pl-2"></i>
+                </a>
+            </nav>
+     
+            <section class="landing-container">
+                <article class="w-50 pr-2">
+                     <h3 class="font-weight-light mb-4">
+                         Welcome to India’s first online shopping from 100% organic verticulture.
+                     </h3>
+                     <img src="assets/images/landing-banner-infographics.svg" width="450"/>
+                </article>
+                <article class="w-50 pl-2">
+                    <h3 class="mb-4 font-weight-normal">Let's get started</h3>
+                     <form>
+                         <div class="d-flex">
+                             <div class="w-50 mr-2">
+                                <input type="text" class="w-100" name="firstname" placeholder="Your first name..">
+                                <small data-validator="firstName" class="text-danger d-none">
+                                    Not a valid first name
+                                </small>
+                             </div>
+                             <div class="w-50 ml-2">
+                                <input type="text" class="w-100" name="lastName" placeholder="Your last name..">
+                                <small data-validator="lastName" class="text-danger d-none">
+                                    Not a valid last name
+                                </small>
+                             </div>
+                         </div>
+                         <div class="d-flex my-3">
+                            <div class="w-50 mr-2">
+                                <input type="password" class="w-100 mr-2" name="password" placeholder="Password..">
+                                <small data-validator="password" class="text-danger d-none">
+                                    Not a valid password
+                                </small>
+                             </div>
+                             <div class="ml-2 w-50 postion-relative">
+                                <input type="password" class="w-100" name="confirm-password" placeholder="Confirm password..">
+                                <small data-validator="confirm-password" class="text-danger d-none">
+                                    Not a valid Confirm password
+                                </small>
+                                <i class="fas fa-eye position-absolute"
+                                id="toggle-visibility" style="cursor: pointer; right: 15px; top: 18px;"></i>
+                             </div>
+                         </div>
+                         <div>
+                            <input type="email" name="email" class="w-100" placeholder="Your email address..">
+                            <small data-validator="email" class="text-danger d-none">
+                                Not a valid email
+                            </small>
+                         </div>
+                         <button type="button" onclick="validateRegistration()" class="btn bg-theme-secondary w-100 border-0 text-white my-4">
+                             Complete Registration
+                         </button>
+                     </form>
+     
+                     <div class="d-flex justify-content-center my-1">
+                         <div class="w-100 d-flex justify-content-around">
+                             <hr class="my-auto w-30 desktop-only border-secondary">
+                             <h5 class="my-auto w-40 text-center font-weight-light">Or Sign-up Using</h5>
+                             <hr class="my-auto w-30 desktop-only border-secondary">
+                         </div>
+                     </div>
+     
+                     <div class="d-md-flex justify-content-center text-center my-4">
+                         <button type="button" class="btn btn-white boder-theme-secondary my-auto d-inline-flex mx-2">
+                             <img alt="google" class="mr-1 my-auto" src="assets/images/google-logo.png" width="25">
+                             <span class="my-auto font-weight-normal">
+                                 Continue with Google
+                             </span>
+                         </button>
+                     </div>
+                 </article>
+            </section>
 
-                <div class="d-md-flex justify-content-center text-center my-4">
-                    <button type="button" class="btn btn-white boder-theme-secondary my-auto d-inline-flex mx-2">
-                        <img alt="google" class="mr-1 my-auto" src="assets/images/google-logo.png" width="25">
-                        <span class="my-auto text-left font-weight-bold">
-                            Continue with Google
-                        </span>
-                    </button>
-                </div>
-            </article>
-       </section>
-      <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-      <script>
-        feather.replace()
+            <div class="d-flex justify-content-center">
+                <ul class="nav">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Refund Policy</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Terms and Conditions</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link disabled" href="#">Contact Us</a>
+                    </li>
+                  </ul>                  
+            </div>
+        </div>
+       <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+       <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+       <script src="assets/js/index.js"></script>
+       <script>
+            feather.replace()
       </script>
     </body>
 </html>
