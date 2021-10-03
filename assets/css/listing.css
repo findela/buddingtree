@@ -1,1 +1,23 @@
 @import "style.css";
+
+.filter-container {
+    height: calc(100vh - 60px);
+    overflow: auto;
+    /* overflow: hidden; */
+}
+/* .filter-container:hover {
+    overflow-y: auto;
+} */
+.filter-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--grey-color-shade); 
+}
+.promo-banner {
+    background: #56ab2f;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #a8e063, #56ab2f);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #a8e063, #56ab2f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+}

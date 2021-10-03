@@ -17,42 +17,141 @@
         <link rel="stylesheet" href="assets/css/listing.css"/>
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 border-bottom">
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/logo.svg">
+            </a>
+        
+            <div class="collapse navbar-collapse ml-md-5 pl-md-5 pl-0 ml-0">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Dropdown
+                    <li class="nav-item active mx-md-1 px-md-2">
+                        <a class="nav-link text-md-center px-0 text-dark">
+                            Shop <span class="sr-only">(current)</span>
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    <li class="nav-item mx-md-1 text-md-center px-md-2">
+                        <a class="nav-link text-dark">Videos</a>
+                    </li>
+                    <li class="nav-item mx-md-1 text-md-center px-md-2">
+                        <a class="nav-link text-dark">Things</a>
+                    </li>
+                    <li class="nav-item mx-md-1 text-md-center px-md-2">
+                        <a class="nav-link text-dark">Blog</a>
                     </li>
                 </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item mx-md-2 px-md-2 bg-grey-lighter rounded-circle cart-icon position-relative">
+                        <a class="nav-link text-md-center px-0 text-dark">
+                            <span data-feather="shopping-bag"></span>
+                        </a>
+                        <span class="badge badge-danger rounded-circle position-absolute">2</span>
+                    </li>
+                    <li class="nav-item mx-md-2 px-md-2">
+                        <a class="nav-link text-md-center px-0 text-dark">
+                            <span data-feather="heart"></span>
+                        </a>
+                    </li>
+                    <li class="nav-item mx-md-2 px-md-2">
+                        <a class="nav-link text-md-center px-0 text-dark">
+                            <img src="https://cdn-icons-png.flaticon.com/512/921/921124.png" width="30">
+                        </a>
+                    </li>
+                </ul>
             </div>
         </nav>
+        <div class="main-container">
+            <div class="row">
+                <!-- filter panel -->
+                <div class="col-md-3">
+                    <div class="card filter-container">
+                        <h6 class="card-title font-weight-light mb-0 p-3 border-bottom text-uppercase">
+                            Filter Options
+                        </h6>
+                        <div class="card-body p-3">
+                            <article>
+                                <h6 class="card-title text-theme-primary">
+                                    Categories
+                                </h5>
+                                <div class="custom-control custom-checkbox mb-2">
+                                    <input type="checkbox" class="custom-control-input" id="Gradening" checked>
+                                    <label class="custom-control-label" for="Gradening">Gradening</label>
+                                </div>
+                                <div class="custom-control custom-checkbox mb-2">
+                                    <input type="checkbox" class="custom-control-input" id="Seeds">
+                                    <label class="custom-control-label" for="Seeds">Seeds</label>
+                                </div>
+                                <div class="custom-control custom-checkbox mb-2">
+                                    <input type="checkbox" class="custom-control-input" id="Plants">
+                                    <label class="custom-control-label" for="Plants">Plants</label>
+                                </div>
+                                <div class="custom-control custom-checkbox mb-2">
+                                    <input type="checkbox" class="custom-control-input" id="Saplings">
+                                    <label class="custom-control-label" for="Saplings">Saplings</label>
+                                
+                                </div>
+                                <div class="custom-control custom-checkbox mb-2">
+                                    <input type="checkbox" class="custom-control-input" id="Pesticides-and-Insecticides">
+                                    <label class="custom-control-label" for="Pesticides-and-Insecticides">Pesticides and Insecticides</label>
+                                </div>
+                            </article>
 
+                            <article class="py-3">
+                                <h6 class="card-title text-theme-primary">
+                                    Price Range
+                                </h5>
+                                <div class="form-group position-relative">
+                                    <input id="sliderRangeInput" type="range" class="form-control-range" id="formControlRange">
+                                    <small style="left: 0" class="position-absolute">0</small>
+                                    <small style="right: 0" class="position-absolute">10,000</small>
+                                  </div>
+                            </article>
+
+                            <article class="py-2">
+                                <h6 class="card-title text-theme-primary mb-1">
+                                    Ratings
+                                </h5>
+                                <div class="form-group">
+                                    <span class="rating fa fa-star checked"></span>
+                                    <span class="rating fa fa-star checked"></span>
+                                    <span class="rating fa fa-star checked"></span>
+                                    <span class="rating fa fa-star"></span>
+                                    <span class="rating fa fa-star"></span>
+                                </div>
+                            </article>
+
+                            <article>
+                                <h6 class="card-title text-theme-primary">
+                                    Availability
+                                </h5>
+                                <div class="custom-control custom-checkbox mb-2">
+                                    <input type="checkbox" class="custom-control-input" id="include" checked>
+                                    <label class="custom-control-label" for="Gradening">Include Out of Stock</label>
+                                </div>
+                                <div class="custom-control custom-checkbox mb-2">
+                                    <input type="checkbox" class="custom-control-input" id="exclude">
+                                    <label class="custom-control-label" for="Seeds">Exclude Out of Stock</label>
+                                </div>
+                            </article>
+                            
+                            <article class="my-3 py-2">
+                                <div class="card">
+                                    <div class="promo-banner card-body text-center">
+                                        <h4 class="card-title text-theme-secondary px-3">
+                                            Enjoy upto 50% FLAT OFF
+                                        </h4>
+                                        <button class="btn bg-black">Click to Share</button>
+                                    </div>
+                                </div>
+                            </article>
+                        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    sss
+                </div>
+            </div>
+        </div>
         <!--javascript related plugin-->
         <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
