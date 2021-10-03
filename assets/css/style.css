@@ -26,14 +26,15 @@ nav.navbar {
 }
 
 .cart-icon {
-    width: 48px;
+    width: 42px;
+    height: 42px;
 }
 
 .cart-icon .badge {
    right: 1px;
    top: 6px;
    font-weight: 400;
-   width: 20px;
+   width: 18px;
 }
 
 @media (min-width: 780px) {
@@ -117,4 +118,8 @@ input[type='range']::-webkit-slider-thumb {
 }
 .rating.checked {
     color: var(--warning-color-shade--dark);
+}
+
+.bottom-0 {
+    bottom: 0;
 }
