@@ -44,3 +44,14 @@ body,html {
         display: none !important;
     }
 }
+
+.btn-green {
+    color: #fff;
+    background-color: green;
+    border-color: green;
+}
+
+.btn-green:hover {
+    color: #fff;
+    font-weight: bold;
+}
