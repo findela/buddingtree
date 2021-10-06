@@ -1,0 +1,19 @@
+.fs-18 {
+    font-size: 18px;
+}
+.fs-20 {
+    font-size: 20px;
+}
+.fw-500 {
+    font-weight: 500;
+}
+.fw-700 {
+    font-weight: 700;
+}
+
+.text-grey-light {
+    color: var(--grey-shade-light);
+}
+.text-grey-dark {
+    color: var(--grey-shade-dark);
+}
