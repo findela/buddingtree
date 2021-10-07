@@ -68,6 +68,13 @@ hr {
     border-width: 1px;
     border-top: 1px solid var(--secondary-color-shade);
 }
+.custom-control-input:checked~.custom-control-label::before {
+    background-color: var(--primary-color-shade);
+    border-color: var(--primary-color-shade);
+}
+.custom-control-label::before {
+    border: var(--primary-color-shade) solid 2px;
+}
 
 /* custom utilities classes */
 
