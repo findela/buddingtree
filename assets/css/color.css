@@ -1,0 +1,27 @@
+.text-theme-primary {
+    color: var(--primary-color-shade);
+}
+.bg-theme-primary {
+    background-color: var(--primary-color-shade);
+    color: var(--white-color)
+}
+.text-theme-secondary {
+    color: var(--secondary-color-shade);
+}
+.bg-theme-secondary {
+    background-color: var(--secondary-color-shade);
+    color: var(--white-color)
+}
+.text-black {
+    color: var(--black-color);
+}
+.bg-black {
+    background-color: var(--black-color);
+    color: var(--white-color)
+}
+.text-grey-lighter {
+    color: var(--grey-color-shade--lighter);
+}
+.bg-grey-lighter {
+    background-color: var(--grey-color-shade--lighter);
+}
