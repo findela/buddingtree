@@ -3,25 +3,20 @@
 }
 .bg-theme-primary {
     background-color: var(--primary-color-shade);
-    color: var(--white-color)
+    color: #fff;
 }
 .text-theme-secondary {
     color: var(--secondary-color-shade);
 }
+
+.btn.bg-theme-secondary:hover,
 .bg-theme-secondary {
     background-color: var(--secondary-color-shade);
-    color: var(--white-color)
+    color: #fff;
 }
-.text-black {
-    color: var(--black-color);
+.text-grey-light {
+    color: var(--secondary-color-shade-light);
 }
-.bg-black {
-    background-color: var(--black-color);
-    color: var(--white-color)
-}
-.text-grey-lighter {
-    color: var(--grey-color-shade--lighter);
-}
-.bg-grey-lighter {
-    background-color: var(--grey-color-shade--lighter);
+.bg-grey-light {
+    background-color: var(--secondary-color-shade-light);
 }

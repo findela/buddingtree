@@ -1,0 +1,11 @@
+.navbar img {
+    width: 200px;
+}
+
+input[type=text],
+input[type=password],
+input[type=email] {
+    height: 52px;
+    background-color: var(--seondary-color-shade-lightest);
+    border: 1px solid var(--seondary-color-shade-lighter)
+}

@@ -4,16 +4,14 @@
 body,html {
     padding: 0;
     margin: 0;
-    overflow-x: hidden;
     font-family: 'Ubuntu', sans-serif;
-    font-size: var(--primary-font-size);
-    width: 100%;
+    font-size: var(--font-size);
+    font-weight: var(--font-weight);
     color: var(--secondary-color-shade);
-    height: 100%;
 }
 
-/* responsive related custom brakpoint rule */
-@media (min-width: 780px) {
+/* custom brakpoint rule */
+@media (min-width: 768px) {
     .d-mobile-block {
         display: none !important;
     }
@@ -30,7 +28,7 @@ body,html {
         display: flex !important;
     }
 }
-@media (max-width: 780px) {
+@media (max-width: 768px) {
     .d-mobile-block {
         display: block !important;
     }
@@ -47,8 +45,24 @@ body,html {
         display: none !important;
     }
 }
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1240px;
+    }
+}
+
+.btn-link:hover {
+    color: var(--secondary-color-shade);
+    text-decoration: none;
+}
+
 
 /* utilities classes */
+hr {
+    border-width: 1px;
+    border-top: 1px solid var(--secondary-color-shade);
+}
 .cursor-pointer {
     cursor: pointer;
 }
@@ -57,4 +71,23 @@ body,html {
 }
 .high-z-index {
     z-index: 999;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+.fs-18 {
+    font-size: 18px;
+}
+.fs-25 {
+    font-size: 25px;
+}
+.fw-300 {
+    font-weight: 300;
+}
+.fw-500 {
+    font-weight: 500;
+}
+.fw-600 {
+    font-weight: 600;
 }

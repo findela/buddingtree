@@ -1,13 +1,14 @@
 /* CSS custom notation (variables) */
 :root {
-    --primary-font-size: 16px;
+    --font-size: 16px;
+    --font-weight: 400;
+
     --primary-color-shade: #70AE3E;
     --primary-color-shade--light: #D6FFD7;
     --primary-color-shade--dark: #18621A;
 
-    --secondary-color-shade: #32363B;
-
-    --black-color: #000000;
-    --white-color: #ffffff;
-    --off-white-color: #f7f7f7;
+    --secondary-color-shade: #2C2F3B;
+    --secondary-color-shade-light: #888888;
+    --seondary-color-shade-lighter: #EDEDED;
+    --seondary-color-shade-lightest: #F5F5F5;
 }
