@@ -10,7 +10,7 @@ body,html {
     color: var(--secondary-color-shade);
 }
 
-/* custom brakpoint rule */
+/* custom brakpoints rule */
 @media (min-width: 768px) {
     .d-mobile-block {
         display: none !important;
@@ -52,16 +52,27 @@ body,html {
     }
 }
 
+/* bootstrap overrides */
 .btn-link:hover {
     color: var(--secondary-color-shade);
     text-decoration: none;
 }
-
-
-/* utilities classes */
+input[type=text],
+input[type=password],
+input[type=email] {
+    height: 52px;
+    background-color: var(--seondary-color-shade-lightest);
+    border: 1px solid var(--seondary-color-shade-lighter)
+}
 hr {
     border-width: 1px;
     border-top: 1px solid var(--secondary-color-shade);
+}
+
+/* custom utilities classes */
+
+img.logo {
+    width: 200px;
 }
 .cursor-pointer {
     cursor: pointer;
