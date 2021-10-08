@@ -1,5 +1,4 @@
 .background-layer {
-    background: #fff url("/assets/images/login-hero-bg.svg");
-    background-repeat: no-repeat;
+    background: #fff url("/assets/images/login-hero-bg.svg") no-repeat;
     background-size: cover;
 }
