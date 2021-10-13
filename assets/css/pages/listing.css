@@ -41,3 +41,7 @@
     padding-right: 6px;
     padding-left: 6px;
 }
+
+.dropdown-menu {
+    transform: translate3d(-125px, 31px, 0px) !important;
+}

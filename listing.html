@@ -151,12 +151,31 @@
                 <!-- product listing section -->
                 <div class="col-md-12 col-lg-9">
                     <div class="product-container mt-md-2">
-                        <article class="d-mobile-block w-100 card border-0 rounded-0">
+                        <article class="w-100 card border-0 rounded-0">
                             <div class="card-body py-2 px-0">
-                                <div class="d-flex">
+                                <div class="d-flex justify-content-between">
                                     <div class="position-relative my-auto flex-grow-1">
-                                        <input class="form-control mr-sm-2 w-100" style="padding-left: 35px;" type="search" placeholder="Search">
+                                        <input class="form-control mr-sm-2 w-100" style="padding-left: 35px;" type="search" 
+                                        placeholder="Search">
                                         <i class="fas fa-search text-grey-lighter position-absolute" style="left: 10px; top: 12px;"></i>
+                                    </div>
+                                    <div class="my-auto d-none d-md-inline-flex mx-4">
+                                        <span class="my-auto pr-1 text-secondary">Sort By: </span>
+                                        <a href="#" class="btn badge fw-500 mx-1 p-2 border border-secondary">Relevance</a>
+                                        <a href="#" class="btn badge fw-500 mx-1 p-2 border border-secondary">Most New</a>
+                                        <a href="#" class="btn badge fw-500 mx-1 p-2 border border-secondary">Popular</a>
+                                        <a href="#" class="btn badge fw-500 mx-1 p-2 border border-secondary">Featured</a>
+                                        <div class="dropdown">
+                                            <button class="btn btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                              More
+                                            </button>
+                                            <div class="dropdown-menu shadow border" aria-labelledby="dropdownMenuButton">
+                                              <a class="dropdown-item" href="#">Action</a>
+                                              <a class="dropdown-item" href="#">Another action</a>
+                                              <a class="dropdown-item" href="#">Something else here</a>
+                                            </div>
+                                          </div>
+                                          
                                     </div>
                                     <div class="d-md-none my-auto">
                                         <button data-toggle="modal" data-target="#exampleModal" class="btn btn-dark d-inline ml-2">
@@ -169,7 +188,7 @@
                         </article>
 
                         <!-- promotional banner -->
-                        <article class="my-md-2 d-desktop-block">
+                        <article class="my-md-2 d-md-block d-none">
                             <div class="card">
                                 <div class="promo-banner card-body d-md-flex justify-content-md-between">
                                     <div class="my-auto d-flex justify-content-start">
