@@ -30,7 +30,7 @@
 }
 
 .rating {
-    color: var(--grey-color-shade--light);
+    color: var(--secondary-color-shade-lighter);
     font-size: 14px;
 }
 .rating.checked {

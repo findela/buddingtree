@@ -51,9 +51,9 @@ input[type=text],
 input[type=password],
 input[type=email] {
     height: 52px;
-    background-color: var(--seondary-color-shade-lightest);
+    background-color: var(--secondary-color-shade-lightest);
     
-    border: 1px solid var(--seondary-color-shade-lighter)
+    border: 1px solid var(--secondary-color-shade-lighter)
 }
 input[type='range']::-webkit-slider-thumb {
     width: 15px;
