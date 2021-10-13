@@ -1,5 +1,3 @@
-@import "style.css";
-
 .filter-container {
     height: calc(100vh - 60px);
     overflow: auto;
@@ -22,11 +20,24 @@
     background: linear-gradient(to bottom, #a8e063, #56ab2f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
 }
 
-@media (min-width: 960px) {
-    .filter-panel {
-        max-width: 22%;
-    }
-    .product-list-panel {
-        max-width: 78%;
-    }
+#sliderRangeInput {
+    background: linear-gradient(to right, #D5E9C6 0%, #D5E9C6 50%, #D5E9C6 50%, #D5E9C6 100%);
+    border-radius: 8px;
+    height: 8px;
+    outline: none;
+    transition: background 450ms ease-in;
+    -webkit-appearance: none;
+}
+
+.rating {
+    color: var(--grey-color-shade--light);
+    font-size: 14px;
+}
+.rating.checked {
+    color: #FAD208;
+}
+
+.no-gutters>[class*=col-] {
+    padding-right: 6px;
+    padding-left: 6px;
 }

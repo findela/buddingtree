@@ -1,33 +1,15 @@
+
 /* CSS custom notation (variables) */
 :root {
-    --primary-font-size: 16px;
+    --font-size: 16px;
+    --font-weight: 400;
 
     --primary-color-shade: #70AE3E;
     --primary-color-shade--light: #D6FFD7;
     --primary-color-shade--dark: #18621A;
 
-    --secondary-color-shade: #32363B;
-
-    --black-color: #000000;
-    --white-color: #ffffff;
-    --off-white-color: #f7f7f7;
-
-    --warning-color-shade: #E9E08F;
-    --warning-color-shade--dark: #e5bd37;
-    --warning-color-shade--lighter: #fdf2c3;
-    --warning-color-shade--lightest: #fdf7db;
-
-    --info-color-shade--lightest: #e2f6f9;
-    --info-color-shade--dark: #17a2b8;
-    --aux-color-shade--lightest: #ecf5fe;
-
-    --danger-color-shade: #B92222;
-    --danger-color-shade--light: #d97170;
-    --danger-color-shade--lighter: #fde6e2;
-    --danger-color-shade--lightest: #fffbfb;
-
-    --grey-color-shade: #888888;
-    --grey-color-shade--light: #cccccc;
-    --grey-color-shade--lighter: #EFEFEF;
-    --grey-color-shade--lightest: #f5f5f5;
+    --secondary-color-shade: #2C2F3B;
+    --secondary-color-shade-light: #888888;
+    --seondary-color-shade-lighter: #EDEDED;
+    --seondary-color-shade-lightest: #F5F5F5;
 }

@@ -1,0 +1,29 @@
+
+.text-theme-primary {
+    color: var(--primary-color-shade);
+}
+.bg-theme-primary {
+    background-color: var(--primary-color-shade);
+    color: #fff;
+}
+.text-theme-secondary {
+    color: var(--secondary-color-shade);
+}
+
+.btn.bg-theme-secondary:hover,
+.bg-theme-secondary {
+    background-color: var(--secondary-color-shade);
+    color: #fff;
+}
+.text-grey-light {
+    color: var(--secondary-color-shade-light);
+}
+.bg-grey-light {
+    background-color: var(--secondary-color-shade-light);
+}
+.text-grey-lighter {
+    color: var(--grey-color-shade--lighter);
+}
+.bg-grey-lighter {
+    background-color: var(--grey-color-shade--lighter);
+}
