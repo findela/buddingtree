@@ -45,3 +45,14 @@
 .dropdown-menu {
     transform: translate3d(-125px, 31px, 0px) !important;
 }
+
+@media (min-width: 960px) {
+    .filter-panel {
+        flex: 0 0 22%;
+        max-width: 22%;
+    }
+    .product-list-panel {
+        flex: 0 0 78%;
+        max-width: 78%;
+    }
+}

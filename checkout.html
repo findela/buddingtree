@@ -144,7 +144,7 @@
                                         <div class="mt-2 d-md-flex justify-content-md-between">
                                             <div class="d-inline-flex my-auto">
                                                 <select class="custom-select custom-select-sm">
-                                                    <option selected>Select Year</option>
+                                                    <option selected>Select Month</option>
                                                     <option value="1">1</option>
                                                     <option value="2">2</option>
                                                     <option value="3">3</option>
@@ -166,7 +166,7 @@
                                     </div>
                                 </div>
                             </div>                            
-                            <div class="text-right mt-4">
+                            <div class="text-right mt-4 pt-2 pb-2">
                                 <a class="btn bg-theme-secondary d-inline-flex">
                                     Continue Payment <i class="fas fa-arrow-right my-auto ml-2"></i>
                                 </a>
@@ -176,28 +176,165 @@
                 </section>
 
                 <!-- product lists checkout -->
-                <section class="col-md-12 col-lg-4 offset-lg-1">
+                <section class="col-md-12 col-lg-5 pl-lg-5">
                     <div class="card">
                         <div class="card-body">
-                          <h5 class="card-title text-muted mb-4">Shopping Cart (6 items)</h5>
-                          <div class="w-100"></div>
-                          <div class="card mb-3 border-top-0 border-left-0 border-right-0">
-                            <div class="row no-gutters">
-                              <div class="col-md-2">
-                                <img src="/assets/images/product-image.png" alt="product" class="w-100">
-                              </div>
-                              <div class="col-md-10">
-                                <div class="card-body pr-0 pt-0 pb-3">
-                                  <h5 class="card-title">Garicinia Cambogia</h5>
-                                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            <h5 class="card-title text-muted mb-4">Shopping Cart (6 items)</h5>
+                            <div class="w-100"></div>
+                            
+                            <div class="card my-3 border-top-0 border-left-0 border-right-0">
+                                <div class="row no-gutters">
+                                    <div class="col-md-2">
+                                        <img src="/assets/images/photo-3.png" alt="product" class="w-100">
+                                    </div>
+                                    <div class="col-md-10">
+                                        <div class="card-body pr-0 pt-0 pb-3 d-flex justify-content-between">
+                                            <div class="my-auto" style="margin-top: -8px !important;">
+                                                <h5 class="card-title font-weight-light mb-1">Garcinia cambogia</h5>
+                                                <p class="card-text mb-2 d-flex justify-content-between">
+                                                    <span class="text-muted my-auto">
+                                                        Size: <b class="text-theme-primary pl-1 fw-500">Small</b>
+                                                    </span>
+                                                    <label class="my-auto d-inline-flex ml-3 justify-content-lg-start">
+                                                        <a class="btn my-auto px-2 py-0">
+                                                            <i class="fas fa-minus text-grey-light"></i>
+                                                        </a>
+                                                        <span class="text-muted my-auto">Quantity: 
+                                                            <b class="text-theme-primary pl-1 fw-500">02</b>
+                                                        </span>
+                                                        <a class="btn my-auto px-2 py-0">
+                                                            <i class="fas fa-plus text-grey-light"></i>
+                                                        </a>
+                                                    </label>
+                                                </p>
+                                                <h5>2000 INR 
+                                                    <span class="text-strike font-weight-light ml-1 text-grey-light">
+                                                        3000 INR
+                                                    </span>
+                                                </h5>
+                                            </div>
+                                            <a class="my-auto">
+                                                <i class="fas fa-trash-alt text-danger"></i>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
-                              </div>
                             </div>
-                          </div>
+                            
+                            <div class="card my-3 border-top-0 border-left-0 border-right-0">
+                                <div class="row no-gutters">
+                                    <div class="col-md-2">
+                                        <img src="/assets/images/photo-2.png" alt="product" class="w-100">
+                                    </div>
+                                    <div class="col-md-10">
+                                        <div class="card-body pr-0 pt-0 pb-3 d-flex justify-content-between">
+                                            <div class="my-auto" style="margin-top: -8px !important;">
+                                                <h5 class="card-title font-weight-light mb-1">Garcinia cambogia</h5>
+                                                <p class="card-text mb-2 d-flex justify-content-between">
+                                                    <span class="text-muted my-auto">
+                                                        Size: <b class="text-theme-primary pl-1 fw-500">Small</b>
+                                                    </span>
+                                                    <label class="my-auto d-inline-flex ml-3 justify-content-lg-start">
+                                                        <a class="btn my-auto px-2 py-0">
+                                                            <i class="fas fa-minus text-grey-light"></i>
+                                                        </a>
+                                                        <span class="text-muted my-auto">Quantity: 
+                                                            <b class="text-theme-primary pl-1 fw-500">02</b>
+                                                        </span>
+                                                        <a class="btn my-auto px-2 py-0">
+                                                            <i class="fas fa-plus text-grey-light"></i>
+                                                        </a>
+                                                    </label>
+                                                </p>
+                                                <h5>400 INR 
+                                                    <span class="text-strike font-weight-light ml-1 text-grey-light">
+                                                        900 INR
+                                                    </span>
+                                                </h5>
+                                            </div>
+                                            <a class="my-auto">
+                                                <i class="fas fa-trash-alt text-danger"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
+                            <div class="card mt-3 border-0">
+                                <div class="row no-gutters">
+                                    <div class="col-md-2">
+                                        <img src="/assets/images/photo-4.png" alt="product" class="w-100">
+                                    </div>
+                                    <div class="col-md-10">
+                                        <div class="card-body pr-0 pt-0 pb-3 d-flex justify-content-between">
+                                            <div class="my-auto" style="margin-top: -8px !important;">
+                                                <h5 class="card-title font-weight-light mb-1">Garcinia cambogia</h5>
+                                                <p class="card-text mb-2 d-flex justify-content-between">
+                                                    <span class="text-muted my-auto">
+                                                        Size: <b class="text-theme-primary pl-1 fw-500">Small</b>
+                                                    </span>
+                                                    <label class="my-auto d-inline-flex ml-3 justify-content-lg-start">
+                                                        <a class="btn my-auto px-2 py-0">
+                                                            <i class="fas fa-minus text-grey-light"></i>
+                                                        </a>
+                                                        <span class="text-muted my-auto">Quantity: 
+                                                            <b class="text-theme-primary pl-1 fw-500">02</b>
+                                                        </span>
+                                                        <a class="btn my-auto px-2 py-0">
+                                                            <i class="fas fa-plus text-grey-light"></i>
+                                                        </a>
+                                                    </label>
+                                                </p>
+                                                <h5>1000 INR 
+                                                    <span class="text-strike font-weight-light ml-1 text-grey-light">
+                                                        2000 INR
+                                                    </span>
+                                                </h5>
+                                            </div>
+                                            <a class="my-auto">
+                                                <i class="fas fa-trash-alt text-danger"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="text-theme-primary fw-500">Do you have coupon?</label>
+                                <div class="position-relative">
+                                    <input type="text" style="height: 42px;" class="form-control" placeholder="Coupon e.g. FLAT30">
+                                    <i class="fas fa-times position-absolute text-secondary" style="top: 12px; right: 15px;"></i>
+                                </div>
+                            </div>
+
+                            <ul class="list-group list-group-flush mt-4">
+                                <li class="list-group-item border-bottom-0 p-1 d-flex justify-content-between">
+                                    <span class="my-auto text-muted fw-500">Delivery Charges</span>
+                                    <h5 class="fw-500 my-auto">90 INR</h5>
+                                </li>
+                                <li class="list-group-item border-bottom-0 p-1 d-flex justify-content-between">
+                                    <span class="my-auto text-muted fw-500">Taxes (CGST + SGST)</span>
+                                    <h5 class="fw-500 my-auto">100 INR</h5>
+                                </li>
+
+                                <li class="list-group-item border-bottom-0 px-1 py-3 d-flex justify-content-between">
+                                    <span class="my-auto text-muted fw-500">Discount Applied</span>
+                                    <h5 class="fw-500 my-auto d-inline"> 
+                                        <b class="text-theme-primary pr-1 fs-16">FLAT50</b>
+                                        200 INR
+                                    </h5>
+                                </li>
+                                <li class="list-group-item border-bottom-0 px-1 py-3 d-flex justify-content-between">
+                                    <span class="my-auto text-muted fw-500">Final Total Amount</span>
+                                    <h3 class="fw-600 my-auto d-inline"> 
+                                        11,090 INR
+                                    </h3>
+                                </li>
+                            </ul>
+
+                            <button class="btn w-100 bg-theme-primary btn-lg mt-3">Complete Order</button>
                         </div>
-                      </div>
+                    </div>
                 </section>
             </main>
         </div>
