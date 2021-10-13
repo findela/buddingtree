@@ -1,0 +1,37 @@
+/* custom utilities classes */
+.bottom-0 {
+    bottom: 0;
+}
+.text-strike {
+    text-decoration: line-through;
+}
+.cursor-pointer {
+    cursor: pointer;
+}
+.high-z-index {
+    z-index: 999;
+}
+.fs-12 {
+    font-size: 12px;
+}
+.fs-14 {
+    font-size: 14px;
+}
+.fs-16 {
+    font-size: 16px;
+}
+.fs-18 {
+    font-size: 18px;
+}
+.fs-25 {
+    font-size: 25px;
+}
+.fw-300 {
+    font-weight: 300;
+}
+.fw-500 {
+    font-weight: 500;
+}
+.fw-600 {
+    font-weight: 600;
+}
