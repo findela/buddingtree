@@ -42,3 +42,7 @@
 .border-theme-primary {
     border-color: var(--primary-color-shade);
 }
+
+.bg-warning-light {
+    background-color: var(--warning-color-shade-light);
+}

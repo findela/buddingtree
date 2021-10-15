@@ -13,4 +13,7 @@
     --secondary-color-shade-light: #888888;
     --secondary-color-shade-lighter: #EDEDED;
     --secondary-color-shade-lightest: #F5F5F5;
+
+    --warning-color-shade: #FAD208;
+    --warning-color-shade-light: #FFF3CA;
 }

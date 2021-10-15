@@ -47,7 +47,7 @@ img.logo {
     font-size: 14px;
 }
 .rating.checked {
-    color: #FAD208;
+    color: var(--warning-color-shade);
 }
 
 /* bootstrap overrides */
