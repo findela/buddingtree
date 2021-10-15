@@ -42,6 +42,13 @@ nav.navbar {
 img.logo {
     width: 200px;
 }
+.rating {
+    color: var(--secondary-color-shade-lighter);
+    font-size: 14px;
+}
+.rating.checked {
+    color: #FAD208;
+}
 
 /* bootstrap overrides */
 .btn-link:hover {

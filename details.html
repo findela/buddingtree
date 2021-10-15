@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Web tutorials on Design and Development">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="Training">
+        <title>Welcome to BuddingTree - Product Listing</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#70AE3E">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
+        <!--stylesheet related plugin-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="assets/css/style.css"/>
+        <link rel="stylesheet" href="assets/css/pages/details.css"/>
+    </head>
+    <body>
+       
+        <!-- navigation panel (header) -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 border-bottom">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo.svg">
+            </a>
+        
+            <div class="collapse navbar-collapse ml-md-5 pl-md-5 pl-0 ml-0">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active mx-md-1 px-md-2">
+                        <a class="nav-link text-md-center px-0 text-dark">
+                            Shop <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item mx-md-1 text-md-center px-md-2">
+                        <a class="nav-link text-dark">Videos</a>
+                    </li>
+                    <li class="nav-item mx-md-1 text-md-center px-md-2">
+                        <a class="nav-link text-dark">Things</a>
+                    </li>
+                    <li class="nav-item mx-md-1 text-md-center px-md-2">
+                        <a class="nav-link text-dark">Blog</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item mx-md-2 px-md-2 bg-grey-lighter rounded-circle cart-icon position-relative">
+                        <a class="nav-link text-md-center px-0 text-dark" href="checkout.html">
+                            <span data-feather="shopping-bag"></span>
+                        </a>
+                        <span class="badge badge-danger rounded-circle position-absolute">2</span>
+                    </li>
+                    <li class="nav-item mx-md-2 px-md-2">
+                        <a class="nav-link text-md-center px-0 text-dark">
+                            <span data-feather="heart"></span>
+                        </a>
+                    </li>
+                    <li class="nav-item mx-md-2 px-md-2">
+                        <a class="nav-link text-md-center px-0 text-dark">
+                            <img src="https://cdn-icons-png.flaticon.com/512/921/921124.png" width="30">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        
+            <!-- only for mobile -->
+            <div class="d-md-none d-flex">
+                <a class="nav-link text-md-center px-4 my-auto text-dark">
+                    <span data-feather="heart"></span>
+                </a>
+                <a class="nav-link my-auto text-md-center px-0 text-dark">
+                    <img src="https://cdn-icons-png.flaticon.com/512/921/921124.png" width="30">
+                </a>
+            </div>
+        </nav>
+
+        <div class="container mt-4 pt-4">
+            <div class="row">
+                <div class="col-md-5 d-flex justify-content-between">
+                    <div class="my-auto">
+                        <img src="https://i.ibb.co/vhMGmQy/photo-1509423350716-97f9360b4e09-3.png" 
+                        alt="product-image" class="w-100">
+                    </div>
+                    <div class="mb-auto ml-3">
+                        <img src="/assets/images/photo-1.png" width="60" class="d-block border cursor-pointer rounded mb-2" alt="thumbnail-1">
+                        <img src="/assets/images/photo-3.png" width="60" class="d-block border cursor-pointer rounded mb-2" alt="thumbnail-1">
+                        <img src="/assets/images/photo-2.png" width="60" class="d-block border cursor-pointer rounded mb-2" alt="thumbnail-1">
+                        <img src="/assets/images/photo-4.png" width="60" class="d-block border-2x cursor-pointer border-theme-primary rounded mb-2" alt="thumbnail-1">
+                    </div>
+                </div>
+                <div class="col-md-7 pl-4">
+                    <h1 class="fw-400 mb-0">Garcinia Cambogia</h1>
+                    <span class="text-grey-light fw-500">
+                        aka. Azadirachta indica
+                    </span>
+                    <p class="mt-2 fw-300 text-muted">
+                        Lorem Ipsum is simply dummy text of the printing and 
+                        typesetting industry. Lorem Ipsum has been the industry's 
+                        standard dummy text ever since the 1500s
+                    </p>
+                    <div class="w-100"></div>
+                    <div class="d-lg-flex mt-3 justify-content-lg-start">
+                       <div class="my-auto">
+                            <div class="d-inline-flex mt-3">
+                                <h2 class="font-weight-bold my-auto">2,090 INR</h2>
+                                <h3 class="text-grey-light text-strike fw-500 my-auto ml-3">3,500 INR</h3>
+                            </div>
+                            <div class="form-group mt-2">
+                                <div class="d-inline my-auto">
+                                    <span class="rating fs-20 fa fa-star checked"></span>
+                                    <span class="rating fs-20 fa fa-star checked"></span>
+                                    <span class="rating fs-20 fa fa-star checked"></span>
+                                    <span class="rating fs-20 fa fa-star"></span>
+                                    <span class="rating fs-20 fa fa-star"></span>
+                                </div>
+                                <a class="btn btn-link text-dark fw-500 text-underline ml-2 my-auto p-0">100+ Reviews</a>
+                            </div>
+                       </div>
+
+                       <div class="my-auto pl-lg-5 ml-lg-3" id="size-variants">
+                           <h6 class="d-block text-dark fw-400">Select Size & Variety</h6>
+                           <div class="d-inline">
+                                <a class="btn btn-link btn-lg position-relative fw-600 text-theme-primary active my-auto p-0">Small</a>
+                                <a class="btn btn-link btn-lg text-dark mx-3 my-auto p-0">Medium</a>
+                                <a class="btn btn-link btn-lg text-dark my-auto p-0">Large</a>
+                            </div>
+                       </div>
+
+                    </div>
+
+                    <div class="d-lg-flex mt-3 justify-content-lg-start">
+                        <div class="my-auto">
+                            <span class="text-danger d-block fw-500">
+                                Only 3 items left in stock
+                            </span>
+                            <div class="mt-3">
+                                <button class="btn btn-lg btn-outline-dark fw-500">
+                                    Add to Cart
+                                </button>
+                                <button class="btn btn-lg ml-2 btn-theme-primary fw-500">
+                                    Buy Now
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="my-auto pl-lg-5 ml-lg-3">
+                            <h6 class="d-block text-secondary fw-500">Accepted Payment Methods</h6>
+                            <div class="d-inline-flex mt-1">
+                                 <img src="/assets/images/mastercard.png" width="60" alt="mc" class="mr-2 my-auto">
+                                 <img src="/assets/images/visa.png" width="60" alt="visa" class="mr-2 my-auto">
+                                 <img src="/assets/images/upi.png" width="60" alt="upi" class="mr-2 my-auto">
+                                 <img src="/assets/images/cod.png" width="60" alt="cod" class="mr-2 my-auto">
+                             </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group w-50 mt-4">
+                        <div class="position-relative">
+                            <i class="fas fa-search position-absolute text-secondary" style="top: 16px; left: 15px;"></i>
+                            <input type="text" style="height: 48px; padding-left: 40px;" class="form-control" placeholder="Enter pincode to check">
+                            <small class="form-text text-muted fw-500 mt-2">Dispatch usually in 1-3 days, Delivery by 20th Oct, 2021</small>
+                            <i class="fas fa-times position-absolute text-secondary" style="top: 16px; right: 15px;"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">dddd</div>
+                <div class="col-md-6">dddd</div>
+            </div>
+        </div>
+
+        <!--javascript related plugin-->
+        <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/listing.js"></script>
+        <script>
+          feather.replace()
+        </script>
+    </body>
+</html>

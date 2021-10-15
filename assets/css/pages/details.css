@@ -1,0 +1,9 @@
+#size-variants a.btn-link.active::after {
+    content: '';
+    border-bottom : 6px solid var(--primary-color-shade);
+    width: 58px;
+    display: block;
+    position: absolute;
+    top: 32px;
+    left: -2px;
+}

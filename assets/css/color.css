@@ -2,8 +2,13 @@
 .text-theme-primary {
     color: var(--primary-color-shade);
 }
-.bg-theme-primary {
+.bg-theme-primary,
+.btn-theme-primary {
     background-color: var(--primary-color-shade);
+    color: #fff;
+}
+.btn-theme-primary:hover {
+    background-color: var(--primary-color-shade--dark);
     color: #fff;
 }
 .text-theme-secondary {
@@ -18,12 +23,16 @@
 .text-grey-light {
     color: var(--secondary-color-shade-light);
 }
-.bg-grey-light {
-    background-color: var(--secondary-color-shade-light);
-}
 .text-grey-lighter {
     color: var(--secondary-color-shade-lighter);
 }
+.bg-grey-light {
+    background-color: var(--secondary-color-shade-light);
+}
 .bg-grey-lighter {
     background-color: var(--secondary-color-shade-lighter);
+}
+
+.border-theme-primary {
+    border-color: var(--primary-color-shade);
 }

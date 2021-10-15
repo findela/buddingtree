@@ -28,20 +28,10 @@
     transition: background 450ms ease-in;
     -webkit-appearance: none;
 }
-
-.rating {
-    color: var(--secondary-color-shade-lighter);
-    font-size: 14px;
-}
-.rating.checked {
-    color: #FAD208;
-}
-
 .no-gutters>[class*=col-] {
     padding-right: 6px;
     padding-left: 6px;
 }
-
 .dropdown-menu {
     transform: translate3d(-125px, 31px, 0px) !important;
 }
