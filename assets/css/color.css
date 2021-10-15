@@ -32,6 +32,12 @@
 .bg-grey-lighter {
     background-color: var(--secondary-color-shade-lighter);
 }
+.bg-theme-primary-light {
+    background-color: var(--primary-color-shade--light);
+}
+.bg-theme-primary-lighter {
+    background-color: var(--primary-color-shade--lighter);
+}
 
 .border-theme-primary {
     border-color: var(--primary-color-shade);
