@@ -55,9 +55,23 @@
                         </a>
                     </li>
                     <li class="nav-item mx-md-2 px-md-2">
-                        <a class="nav-link text-md-center px-0 text-dark">
-                            <img src="https://cdn-icons-png.flaticon.com/512/921/921124.png" width="30">
-                        </a>
+                        <div class="dropdown">
+                            <a class="nav-link text-md-center px-0 text-dark dropdown-toggle cursor-pointer" id="dropdownMenuButton" 
+                            data-toggle="dropdown">
+                                <img src="https://cdn-icons-png.flaticon.com/512/921/921124.png" width="30">
+                            </a>
+                            <div class="dropdown-menu shadow border" style="min-width: 200px; left: -120px !important;">
+                                <a class="dropdown-item d-inline-flex py-1" href="#">
+                                    <i class="fas fa-user-circle text-muted my-auto mr-1"></i> My Account
+                                </a>
+                                <a class="dropdown-item d-inline-flex py-1" href="#">
+                                   <i class="fas fa-box-open text-muted my-auto mr-1"></i> My Orders
+                                </a>
+                                <a class="dropdown-item d-inline-flex py-1" href="#">
+                                    <i class="fas fa-sign-out-alt text-muted my-auto mr-1"></i> Logout
+                                </a>
+                            </div>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -80,23 +94,33 @@
                 <!-- image panel -->
                 <section class="col-md-5 d-flex justify-content-between">
                     <div class="my-auto">
-                        <img src="https://i.ibb.co/vhMGmQy/photo-1509423350716-97f9360b4e09-3.png" 
+                        <img id="image-container" 
+                        src="https://i.ibb.co/vhMGmQy/photo-1509423350716-97f9360b4e09-3.png" 
                         alt="product-image" class="w-100">
                     </div>
                     <div class="mb-auto ml-3">
-                        <a href="#lightbox-overlay">
-                            <img src="/assets/images/photo-1.png" width="60"
+                        <a class="image-overlay-thumbnail" href="#lightbox-overlay">
+                            <img src="/assets/images/photo-1.png" width="60" alt="thumbnail-1"
                             class="d-block border cursor-pointer rounded mb-2">
                         </a>
-                        <img src="/assets/images/photo-3.png" width="60" class="d-block border cursor-pointer rounded mb-2" alt="thumbnail-1">
-                        <img src="/assets/images/photo-2.png" width="60" class="d-block border cursor-pointer rounded mb-2" alt="thumbnail-1">
-                        <img src="/assets/images/photo-4.png" width="60" class="d-block border-2x cursor-pointer border-theme-primary rounded mb-2" alt="thumbnail-1">
+                        <a class="image-overlay-thumbnail" href="#lightbox-overlay">
+                            <img src="/assets/images/photo-2.png" width="60" alt="thumbnail-2"
+                            class="d-block border cursor-pointer rounded mb-2">
+                        </a>
+                        <a class="image-overlay-thumbnail" href="#lightbox-overlay">
+                            <img src="/assets/images/photo-3.png" width="60" alt="thumbnail-3"
+                            class="d-block border cursor-pointer rounded mb-2">
+                        </a>
+                        <a class="image-overlay-thumbnail" href="#lightbox-overlay">
+                            <img src="/assets/images/photo-4.png" width="60" alt="thumbnail-4"
+                            class="d-block border-2x cursor-pointer border-theme-primary rounded mb-2">
+                        </a>
                     </div>
-                </section>
                 
-                <a href="#" class="lightbox text-center position-fixed" id="lightbox-overlay">
-                    <img src="/assets/images/photo-1.png" class="mt-5" style="width: 40%;">
-                </a>
+                    <a href="#" class="lightbox text-center position-fixed" id="lightbox-overlay">
+                        <img src="/assets/images/photo-1.png" class="mt-5" style="width: 40%;">
+                    </a>
+                </section>
 
                 <!-- product information -->
                 <section class="col-md-7 pl-4">
@@ -177,7 +201,7 @@
                 
                 <!-- rating and review -->
                 <section class="col-md-5 mt-4 pt-2">
-                    <div class="d-flex justify-content-xl-between">
+                    <div class="d-xl-flex justify-content-xl-between">
                         <div class="my-auto">
                             <h5 class="d-block fw-400 text-dark">Customer Reviews</h5>
                             <div class="form-group mt-2">
@@ -241,16 +265,14 @@
                     </div>
                 </section>
 
-
-                <div class="col-md-7 pl-4">
-                    
-                    <!-- banner section -->
-                    <div class="card my-3 border-2x border-theme-primary">
+                <!-- banner section -->
+                <section class="col-md-7 pl-4">
+                    <article class="card my-3 border-2x border-theme-primary">
                         <div class="card-body py-3 bg-theme-primary-lighter">
-                            <div class="d-flex justify-content-between">
-                                <div class="d-flex justify-content-start my-auto">
+                            <div class="d-lg-flex text-center text-lg-left justify-content-lg-between">
+                                <div class="d-lg-flex justify-content-lg-start my-auto">
                                     <img class="mb-auto" src="/assets/images/tree-icon.png" alt="tree-icon" width="48">
-                                    <div class="my-auto ml-3">
+                                    <div class="my-3 my-lg-auto ml-lg-3">
                                         <h5 class="mb-0 fw-600 d-inline-flex">
                                             <span class="my-auto">Introducing</span> 
                                             <img src="/assets/images/logo.svg" class="my-auto mx-1" width="140"/> 
@@ -260,12 +282,12 @@
                                         <a class="btn btn-sm btn-link px-0 text-dark text-underline">Click to know more</a>
                                     </div>
                                 </div>
-                                <button class="btn btn-dark fw-500 my-auto">
+                                <a class="btn btn-dark fw-500 my-auto">
                                     Add to Cart
-                                </button>
+                                </a>
                             </div>
                         </div>
-                    </div>
+                    </article>
 
                     <div class="dropdown">
                         <button class="btn px-0 dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">
@@ -280,7 +302,7 @@
                     <a class="btn btn-link text-dark fw-500 text-underline my-auto p-0">Viewing -  Top Reviews (10)</a>
 
                     <!-- comment/review section -->
-                    <div class="my-3" id="customer-reviews">
+                    <article class="my-3 pt-3" id="customer-reviews">
                         
                         <div class="d-flex justify-content-start">
                             <img src="https://ui-avatars.com/api/?name=tamaghna+banerjee&background=C4DFFE&color=000000&size=34&rounded=true&bold=true" class="mb-auto"/>
@@ -347,8 +369,8 @@
                                 </div>
                             </div>
                         </div>
-                   </div> 
-                </div>
+                   </article> 
+                </section>
             </div>
         </div>
 
