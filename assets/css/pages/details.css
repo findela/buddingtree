@@ -14,11 +14,14 @@
     left: 0;
     right: 0;
     bottom: 0;
-    /* Translucent background */
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.5s, opacity 0.5s;
     background: rgba(0, 0, 0, 0.75);
 }
 
 /* Unhide the lightbox when it's the target */
 .lightbox:target {
-    display: block !important;
+    visibility: visible;
+    opacity: 1;
 }
