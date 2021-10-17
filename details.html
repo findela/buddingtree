@@ -84,13 +84,20 @@
                         alt="product-image" class="w-100">
                     </div>
                     <div class="mb-auto ml-3">
-                        <img src="/assets/images/photo-1.png" width="60" class="d-block border cursor-pointer rounded mb-2" alt="thumbnail-1">
+                        <a href="#lightbox-overlay">
+                            <img src="/assets/images/photo-1.png" width="60"
+                            class="d-block border cursor-pointer rounded mb-2">
+                        </a>
                         <img src="/assets/images/photo-3.png" width="60" class="d-block border cursor-pointer rounded mb-2" alt="thumbnail-1">
                         <img src="/assets/images/photo-2.png" width="60" class="d-block border cursor-pointer rounded mb-2" alt="thumbnail-1">
                         <img src="/assets/images/photo-4.png" width="60" class="d-block border-2x cursor-pointer border-theme-primary rounded mb-2" alt="thumbnail-1">
                     </div>
                 </section>
                 
+                <a href="#" class="lightbox text-center d-none position-fixed" id="lightbox-overlay">
+                    <img src="/assets/images/photo-1.png" class="mt-5" style="width: 40%;">
+                </a>
+
                 <!-- product information -->
                 <section class="col-md-7 pl-4">
                     <h1 class="fw-400 mb-0">Garcinia Cambogia</h1>
@@ -117,7 +124,7 @@
                                     <span class="rating fs-20 fa fa-star"></span>
                                     <span class="rating fs-20 fa fa-star"></span>
                                 </div>
-                                <a class="btn btn-link text-dark fw-500 text-underline ml-2 my-auto p-0">100+ Reviews</a>
+                                <a href="#customer-reviews" class="btn review-btn btn-link text-dark fw-500 text-underline ml-2 my-auto p-0">100+ Reviews</a>
                             </div>
                        </div>
 
@@ -273,7 +280,7 @@
                     <a class="btn btn-link text-dark fw-500 text-underline my-auto p-0">Viewing -  Top Reviews (10)</a>
 
                     <!-- comment/review section -->
-                    <div class="my-3">
+                    <div class="my-3" id="customer-reviews">
                         <div class="d-flex justify-content-start">
                             <img src="https://ui-avatars.com/api/?background=C4DFFE&color=000000&size=34&rounded=true&bold=true" class="mb-auto"/>
                             <div class="my-auto ml-3">
@@ -346,7 +353,7 @@
         <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="assets/js/listing.js"></script>
+        <script src="assets/js/details.js"></script>
         <script>
           feather.replace()
         </script>
