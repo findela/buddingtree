@@ -17,7 +17,7 @@
     visibility: hidden;
     opacity: 0;
     transition: visibility 0.5s, opacity 0.5s;
-    background: rgba(0, 0, 0, 0.75);
+    background: rgba(41, 47, 38, 0.7);
 }
 
 /* Unhide the lightbox when it's the target */
