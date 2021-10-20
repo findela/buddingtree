@@ -1,0 +1,251 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Web tutorials on Design and Development">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="Training">
+        <title>Your Orders - All</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#70AE3E">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
+        <!--stylesheet related plugin-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="assets/css/style.css"/>
+    </head>
+    <body>
+        
+        <!-- navigation panel (header) -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 border-bottom">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo.svg">
+            </a>
+        
+            <div class="collapse navbar-collapse ml-md-5 pl-md-5 pl-0 ml-0">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active mx-md-1 px-md-2">
+                        <a class="nav-link text-md-center px-0 text-dark">
+                            Shop <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item mx-md-1 text-md-center px-md-2">
+                        <a class="nav-link text-dark">Videos</a>
+                    </li>
+                    <li class="nav-item mx-md-1 text-md-center px-md-2">
+                        <a class="nav-link text-dark">Things</a>
+                    </li>
+                    <li class="nav-item mx-md-1 text-md-center px-md-2">
+                        <a class="nav-link text-dark">Blog</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item mx-md-2 px-md-2 bg-grey-lighter rounded-circle cart-icon position-relative">
+                        <a class="nav-link text-md-center px-0 text-dark" href="checkout.html">
+                            <span data-feather="shopping-bag"></span>
+                        </a>
+                        <span class="badge badge-danger rounded-circle position-absolute">2</span>
+                    </li>
+                    <li class="nav-item mx-md-2 px-md-2">
+                        <a class="nav-link text-md-center px-0 text-dark">
+                            <span data-feather="heart"></span>
+                        </a>
+                    </li>
+                    <li class="nav-item mx-md-2 px-md-2">
+                        <div class="dropdown">
+                            <a class="nav-link text-md-center px-0 text-dark dropdown-toggle cursor-pointer" id="dropdownMenuButton" 
+                            data-toggle="dropdown">
+                                <img src="https://cdn-icons-png.flaticon.com/512/921/921124.png" width="30">
+                            </a>
+                            <div class="dropdown-menu shadow border" style="min-width: 200px; left: -120px !important;">
+                                <a class="dropdown-item d-inline-flex py-1" href="#">
+                                    <i class="fas fa-user-circle text-muted my-auto mr-1"></i> My Account
+                                </a>
+                                <a class="dropdown-item d-inline-flex py-1" href="#">
+                                   <i class="fas fa-box-open text-muted my-auto mr-1"></i> My Orders
+                                </a>
+                                <a class="dropdown-item d-inline-flex py-1" href="#">
+                                    <i class="fas fa-sign-out-alt text-muted my-auto mr-1"></i> Logout
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        
+            <!-- only for mobile -->
+            <div class="d-md-none d-flex">
+                <a class="nav-link text-md-center px-4 my-auto text-dark">
+                    <span data-feather="heart"></span>
+                </a>
+                <a class="nav-link my-auto text-md-center px-0 text-dark">
+                    <img src="https://cdn-icons-png.flaticon.com/512/921/921124.png" width="30">
+                </a>
+            </div>
+        </nav>
+
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-10 mx-auto">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="my-lg-auto my-2 d-flex justify-content-between">
+                                <div class="my-auto">
+                                    <small class="text-muted fw-500 d-block">Order ID</small>
+                                    <h5 class="fw-500 d-inlin">
+                                        #BUDT12948422-0091 <i class="far fa-copy text-muted my-auto"></i>
+                                    </h5>
+                                </div>
+                                <div class="my-auto">
+                                    <small class="text-muted mt-2 fw-500 d-block">Ordered On</small>
+                                    <h6 class="fw-500">2 days ago</h6>
+                                </div>
+                            </div>
+                            <h5 class="card-title text-muted mt-2 mb-0">Ordered Items (7)</h5>
+                            <ul class="list-group mb-5 list-group-flush">
+                                <li class="list-group-item py-2 d-lg-flex justify-content-lg-between px-0">
+                                    <div class="d-flex justify-content-start my-auto">
+                                        <img src="/assets/images/photo-1.png" width="90" class="my-auto">
+                                        <div class="my-auto">
+                                            <h5 class="card-title fw-400 mt-3 mb-1">Garcinia Cambogia</h5>
+                                            <div class="d-inline-flex justify-content-start">
+                                                <span class="fw-500 my-auto">3 Items</span>
+                                                <span class="text-muted my-auto mx-3">
+                                                    Size: <b class="text-theme-primary pl-1 fw-500">Small</b>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h4 class="fw-500 my-auto">1,090 INR</h4>
+                                </li>
+                                <li class="list-group-item py-2 d-lg-flex justify-content-lg-between px-0">
+                                    <div class="d-flex justify-content-start my-auto">
+                                        <img src="/assets/images/photo-1.png" width="90" class="my-auto">
+                                        <div class="my-auto">
+                                            <h5 class="card-title fw-400 mt-3 mb-1">Garcinia Cambogia</h5>
+                                            <div class="d-inline-flex justify-content-start">
+                                                <span class="fw-500 my-auto">3 Items</span>
+                                                <span class="text-muted my-auto mx-3">
+                                                    Size: <b class="text-theme-primary pl-1 fw-500">Small</b>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h4 class="fw-500 my-auto">1,090 INR</h4>
+                                </li>
+                                <li class="list-group-item py-2 d-lg-flex justify-content-lg-between px-0">
+                                    <div class="d-flex justify-content-start my-auto">
+                                        <img src="/assets/images/photo-1.png" width="90" class="my-auto">
+                                        <div class="my-auto">
+                                            <h5 class="card-title fw-400 mt-3 mb-1">Garcinia Cambogia</h5>
+                                            <div class="d-inline-flex justify-content-start">
+                                                <span class="fw-500 my-auto">3 Items</span>
+                                                <span class="text-muted my-auto mx-3">
+                                                    Size: <b class="text-theme-primary pl-1 fw-500">Small</b>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h4 class="fw-500 my-auto">1,090 INR</h4>
+                                </li>
+                                <li class="list-group-item py-2 d-lg-flex justify-content-lg-between px-0">
+                                    <div class="d-flex justify-content-start my-auto">
+                                        <img src="/assets/images/photo-1.png" width="90" class="my-auto">
+                                        <div class="my-auto">
+                                            <h5 class="card-title fw-400 mt-3 mb-1">Garcinia Cambogia</h5>
+                                            <div class="d-inline-flex justify-content-start">
+                                                <span class="fw-500 my-auto">3 Items</span>
+                                                <span class="text-muted my-auto mx-3">
+                                                    Size: <b class="text-theme-primary pl-1 fw-500">Small</b>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h4 class="fw-500 my-auto">1,090 INR</h4>
+                                </li>
+                                <li class="list-group-item py-2 d-lg-flex justify-content-lg-between px-0">
+                                    <div class="d-flex justify-content-start my-auto">
+                                        <img src="/assets/images/photo-1.png" width="90" class="my-auto">
+                                        <div class="my-auto">
+                                            <h5 class="card-title fw-400 mt-3 mb-1">Garcinia Cambogia</h5>
+                                            <div class="d-inline-flex justify-content-start">
+                                                <span class="fw-500 my-auto">3 Items</span>
+                                                <span class="text-muted my-auto mx-3">
+                                                    Size: <b class="text-theme-primary pl-1 fw-500">Small</b>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h4 class="fw-500 my-auto">1,090 INR</h4>
+                                </li>
+                              </ul>
+                        </div>
+                        
+                        <div class="col-lg-6 pl-lg-5">
+                            <div class="card position-sticky" style="top: 30px">
+                                <div class="card-body">
+                                    <article class="card">
+                                        <div class="card-body d-md-flex justify-content-md-between">
+                                            <div class="my-auto mr-md-4">
+                                                <h6 class="card-title fw-500 text-muted d-inline">Shipping Address</h6>
+                                                <h5 class="card-subtitle mt-3 mb-1 fs-18">
+                                                    96/A, Houston Road, Benstoll Cornel House
+                                                </h5>
+                                                <span class="card-link text-muted">Parkstreet, Kolkata</span>
+                                                <span class="card-link text-muted">700092</span>
+                                            </div>
+                                            <button data-toggle="modal" data-target="#addressChangeModal" 
+                                            class="btn btn-outline-dark fw-500 px-4 my-auto">
+                                                Change
+                                            </button>
+                                        </div>
+                                    </article>
+        
+                                    <ul class="list-group list-group-flush mt-4">
+                                        <li class="list-group-item border-bottom-0 p-1 d-flex justify-content-between">
+                                            <span class="my-auto text-muted fw-500">Total Amount</span>
+                                            <h5 class="fw-500 my-auto">3,270 INR</h5>
+                                        </li>
+                                        <li class="list-group-item border-bottom-0 p-1 d-flex justify-content-between">
+                                            <span class="my-auto text-muted fw-500">Delivery Charges</span>
+                                            <h5 class="fw-500 my-auto">+ 90 INR</h5>
+                                        </li>
+                                        <li class="list-group-item border-bottom-0 p-1 d-flex justify-content-between">
+                                            <span class="my-auto text-muted fw-500">Taxes (CGST + SGST)</span>
+                                            <h5 class="fw-500 my-auto">+ 100 INR</h5>
+                                        </li>
+        
+                                        <li class="list-group-item border-bottom-0 px-1 py-3 d-flex justify-content-between">
+                                            <span class="my-auto text-muted fw-500">Discount Applied</span>
+                                            <h5 class="fw-500 my-auto d-inline"> 
+                                                <b class="text-theme-primary pr-1 fs-16">FLAT50</b>
+                                                - 200 INR
+                                            </h5>
+                                        </li>
+                                        <li class="list-group-item border-bottom-0 px-1 py-3 d-flex justify-content-between">
+                                            <span class="my-auto text-muted fw-500">Final Total Amount</span>
+                                            <h3 class="fw-600 my-auto d-inline"> 
+                                                11,090 INR
+                                            </h3>
+                                        </li>
+                                    </ul>
+        
+                                    <a href="#" class="btn w-100 btn-danger fw-500 btn-lg mt-3">Cancel Order</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <script>
+            feather.replace()
+        </script>
+    </body>
+</html>

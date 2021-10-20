@@ -87,7 +87,9 @@ hr {
 .custom-control-label::before {
     border: var(--primary-color-shade) solid 2px;
 }
-
+.loader-background {
+    background-color: rgba(255, 255, 255, 0.85);
+}
 @media (max-width: 920px) {
     .w-sm-100 {
         width: 100% !important;
