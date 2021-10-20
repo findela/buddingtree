@@ -1,0 +1,34 @@
+.timeline {
+    list-style-type: none;
+} 
+.status {
+    padding: 0px 20px;
+    display: flex;
+    justify-content: start;
+    border-top: 2px solid #D6DCE0;
+    position: relative;
+    transition: all 200ms ease-in;
+}
+.status:before {
+    content: "";
+    width: 18px;
+    height: 18px;
+    background-color: white;
+    border-radius: 25px;
+    border: 1px solid #ddd;
+    position: absolute;
+    top: -12px;
+    left: 42%;
+    transition: all 200ms ease-in;
+}
+.li.complete .status {
+    border-top: 2px solid var(--primary-color-shade);
+}
+.li.complete .status:before {
+    background-color: var(--primary-color-shade);
+    border: none;
+    transition: all 200ms ease-in;
+}
+.loader-background {
+    background-color: rgba(255, 255, 255, 0.85);
+}

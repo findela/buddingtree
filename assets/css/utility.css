@@ -2,6 +2,15 @@
 .bottom-0 {
     bottom: 0;
 }
+.top-0 {
+    top: 0;
+}
+.left-0 {
+    left: 0;
+}
+.right-0 {
+    right: 0;
+}
 .text-strike {
     text-decoration: line-through;
 }
@@ -41,12 +50,10 @@
 .fw-600 {
     font-weight: 600;
 }
-
 .border-2x {
     border-width: 2px;
     border-style: solid;
 }
-
 .text-underline {
     text-decoration: underline;
 }
