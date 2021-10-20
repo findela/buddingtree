@@ -95,3 +95,23 @@ hr {
         width: 100% !important;
     }
 }
+
+/* timeline style */
+.timeline {
+    list-style-type: none;
+}
+.status:before {
+    content: "";
+    width: 18px;
+    height: 18px;
+    background-color: white;
+    border-radius: 25px;
+    border: 1px solid var(--secondary-color-shade-light);
+    position: absolute;
+    top: -10px;
+    left: 42%;
+}
+.li.complete .status:before {
+    background-color: var(--primary-color-shade);
+    border: none;
+}
