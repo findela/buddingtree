@@ -1,0 +1,52 @@
+/* /* input:focus {
+    background-color: red;
+    border: 2px solid green !important;
+} */
+/* a:focus {
+    color: green;
+}
+a:before {
+    content: "♠";
+    color : red;
+    position: absolute;
+}
+a:hover {
+    color: blue;
+}
+#targetElement:hover {
+    background-color: yellow;
+}
+button:disabled {
+    background-color: blue;
+}
+
+@keyframes example {
+    0% {background-color: red; left: 0; top: 0;}
+    25% {background-color: yellow; left: 200px; top: 0px;}
+    50% {background-color: blue; left: 200px; top: 200px;}
+    75% {background-color: green; left: 0px; top: 200px;}
+    100% {background-color: aquamarine; left: 0; top: 0;}
+  }
+  
+  /* The element to apply the animation to */
+  #targetElement {
+    background-color: red;
+    /* animation-name: example; */
+    /* position: relative; */
+    /* animation-duration: 5s; */
+    /* animation-delay: 2s; */
+    /* transition: width 2s; */
+    /* transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1); */
+    animation: example 5s infinite;
+    animation-timing-function: linear;
+    /* animation-iteration-count: 40; */
+    /* animation-direction: reverse; */
+    width: 100px;
+    height: 300px;
+    /* transform: translate(50px,100px); */
+    /* transform: rotate(20deg); */
+} */
+
+#targetElement:hover {
+    width: 300px;
+} */
