@@ -1,5 +1,5 @@
 $(function () {
     setTimeout(() => {
         $(".loader-background").fadeOut();
-    }, 1500);
+    }, 2000);
 });
