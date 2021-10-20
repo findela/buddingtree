@@ -29,24 +29,24 @@ button:disabled {
   }
   
   /* The element to apply the animation to */
-  #targetElement {
+  /* #targetElement {
     background-color: red;
-    /* animation-name: example; */
-    /* position: relative; */
-    /* animation-duration: 5s; */
-    /* animation-delay: 2s; */
-    /* transition: width 2s; */
-    /* transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1); */
+    animation-name: example;
+    position: relative;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    transition: width 2s;
+    transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
     animation: example 5s infinite;
     animation-timing-function: linear;
-    /* animation-iteration-count: 40; */
-    /* animation-direction: reverse; */
+    animation-iteration-count: 40;
+    animation-direction: reverse;
     width: 100px;
     height: 300px;
-    /* transform: translate(50px,100px); */
-    /* transform: rotate(20deg); */
+    transform: translate(50px,100px);
+    transform: rotate(20deg);
 } */
 
-#targetElement:hover {
+/* #targetElement:hover {
     width: 300px;
 } */
