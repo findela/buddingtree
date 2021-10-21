@@ -10,9 +10,14 @@
         <meta name="theme-color" content="#18621A">
     </head>
     <body>
-        
+        <input type="email" value="">
+        <h1 id="team-id"></h1>
         <script type="text/javascript">
-
+            localStorage.setItem("team", "Bootstrap");
+            // localStorage.removeItem("team");
+            console.log(localStorage.getItem("team"));
+            var data = localStorage.getItem("team");
+            document.getElementById("team-id").innerHTML = data;
         </script>
     </body>
 </html>
