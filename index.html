@@ -10,14 +10,67 @@
         <meta name="theme-color" content="#18621A">
     </head>
     <body>
-        <input type="email" value="">
-        <h1 id="team-id"></h1>
+        <h1 id="name" class="element" style="color: green"></h1>
+        <h2 id="amount" class="element" style="color: red"></h2>
+        <h3 id="ratings" class="element" style="color: blue"></h3>
+
+        <form name="form1">
+            <input type="text" name="element" value="">
+        </form>
+        <button type="button" onclick="getValue()">Click Me</button>
         <script type="text/javascript">
-            localStorage.setItem("team", "Bootstrap");
-            // localStorage.removeItem("team");
-            console.log(localStorage.getItem("team"));
-            var data = localStorage.getItem("team");
-            document.getElementById("team-id").innerHTML = data;
+            function getValue() {
+                console.log(document.form1.element.value);
+            }
+            // defining you function
+            // function Employee(firstName,lastName) {  
+            //     this.firstName=firstName;  
+            //     this.lastName=lastName;  
+            // }  
+            
+            // // creating protoype named fullName of type Employee 
+            // Employee.prototype.fullName = function()  
+            // {  
+            //     return this.firstName+" "+this.lastName;  
+            // }  
+            
+            // // instanciating object of Employee function type
+            // var employee1 = new Employee("Martin","Roy");  
+            // var employee2 = new Employee("Duke", "William");  
+            
+            // // and calling this function with fullName
+            // document.writeln(employee1.fullName()+"<br>");  
+            // document.writeln(employee2.fullName());  
+
+            // class Employee {  
+            //     constructor() {  
+            //         this.id = 101;  
+            //         this.name = "Martin Roy";  
+            //     }   
+            // }  
+            // var emp = new Employee();  
+            // document.writeln(emp.id+" "+emp.name);
+            
+            // var prices = [100,200,300,400];
+            // for(i = 0; i< prices.length; i++) {
+            //     document.write("prices is:"+prices[i]+"<br/>");
+            // }
+
+            // var days=["Monday","Tuesday","Saturday","Sunday","Thursday","Friday"];  
+            // // function check(value)  
+            // // {  
+            // //     return value > 30;  //return false, as marks[4]=20  
+            // // } 
+            // days.splice(2,2,"Saturday");
+            // console.log(days);
+            
+            // let x = "29";
+            console.log(document.getElementsByTagName("h1"));
+
+            // for (let key of marks.keys()) {
+            //     document.write(key+"<br/>");
+            // }
+            // document.writeln(marks.every(check));  
         </script>
     </body>
 </html>
