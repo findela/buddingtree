@@ -8,69 +8,70 @@
         <title>JS/jQuery - Demo</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="theme-color" content="#18621A">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     </head>
-    <body>
-        <h1 id="name" class="element" style="color: green"></h1>
-        <h2 id="amount" class="element" style="color: red"></h2>
-        <h3 id="ratings" class="element" style="color: blue"></h3>
-
-        <form name="form1">
-            <input type="text" name="element" value="">
-        </form>
-        <button type="button" onclick="getValue()">Click Me</button>
+    <body>   
+        <div class="container">
+            <div class="row mt-4">
+                <div class="col-md-8 mx-auto mt-5">
+                    <form>
+                        <div class="form-group">
+                          <label for="email">Email address</label>
+                          <input type="email" name="email" class="form-control" id="email" placeholder="Enter email">
+                          <small id="emailHelp" class="form-text">We'll never share your email with anyone else.</small>
+                        </div>
+                        <div class="form-group">
+                          <label for="password">Password</label>
+                          <input type="password" name="password" class="form-control" id="password" placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                            <label for="confirm-password">Confirm Password</label>
+                            <input type="password" name="confirm-password" class="form-control" id="confirm-password" placeholder="Password">
+                        </div>
+                        <button type="button" onclick="checkValidation()" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
         <script type="text/javascript">
-            function getValue() {
-                console.log(document.form1.element.value);
+            function checkValidation() {
+                let VALIDATION = false;
+                const forms = document.querySelectorAll('form');
+                Array.from(forms[0].elements).forEach((input) => {
+                    if(input.type !== 'button') {
+                        document.getElementById(input.id).style.background = '';
+                        document.getElementById(input.id).style.border = '';
+                        if(!input.value.length) {
+                            document.getElementById(input.id).style.background = '#FDE6D6';
+                            document.getElementById(input.id).style.border = '2px solid red';
+                            VALIDATION = true;
+                        }
+                        else if(input.id === 'email') {
+                            var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                            if(!re.test(input.value)) {
+                                document.getElementById(input.id).style.background = '#FDE6D6';
+                                document.getElementById(input.id+"Help").style.color = 'red';
+                                document.getElementById(input.id).style.border = '2px solid red';
+                                alert("Not a valid email address");
+                                VALIDATION = true;
+                            }
+                        }
+                        else if(input.id === 'confirm-password' && input.value !== document.getElementById("password").value) {
+                            input.style.background = '#FDE6D6';
+                            input.style.border = '2px solid red';
+                            document.getElementById("password").style.background = '#FDE6D6';
+                            document.getElementById("password").style.border = '2px solid red';
+                            alert("password and confirm password doesn't match");
+                            VALIDATION = true;
+                        }
+                    }
+                });
+                
+                if(!VALIDATION) {
+                    alert("form is validated suvccessfully");
+                }
             }
-            // defining you function
-            // function Employee(firstName,lastName) {  
-            //     this.firstName=firstName;  
-            //     this.lastName=lastName;  
-            // }  
-            
-            // // creating protoype named fullName of type Employee 
-            // Employee.prototype.fullName = function()  
-            // {  
-            //     return this.firstName+" "+this.lastName;  
-            // }  
-            
-            // // instanciating object of Employee function type
-            // var employee1 = new Employee("Martin","Roy");  
-            // var employee2 = new Employee("Duke", "William");  
-            
-            // // and calling this function with fullName
-            // document.writeln(employee1.fullName()+"<br>");  
-            // document.writeln(employee2.fullName());  
-
-            // class Employee {  
-            //     constructor() {  
-            //         this.id = 101;  
-            //         this.name = "Martin Roy";  
-            //     }   
-            // }  
-            // var emp = new Employee();  
-            // document.writeln(emp.id+" "+emp.name);
-            
-            // var prices = [100,200,300,400];
-            // for(i = 0; i< prices.length; i++) {
-            //     document.write("prices is:"+prices[i]+"<br/>");
-            // }
-
-            // var days=["Monday","Tuesday","Saturday","Sunday","Thursday","Friday"];  
-            // // function check(value)  
-            // // {  
-            // //     return value > 30;  //return false, as marks[4]=20  
-            // // } 
-            // days.splice(2,2,"Saturday");
-            // console.log(days);
-            
-            // let x = "29";
-            console.log(document.getElementsByTagName("h1"));
-
-            // for (let key of marks.keys()) {
-            //     document.write(key+"<br/>");
-            // }
-            // document.writeln(marks.every(check));  
         </script>
     </body>
 </html>
