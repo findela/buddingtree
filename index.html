@@ -10,68 +10,29 @@
         <meta name="theme-color" content="#18621A">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     </head>
-    <body>   
-        <div class="container">
-            <div class="row mt-4">
-                <div class="col-md-8 mx-auto mt-5">
-                    <form>
-                        <div class="form-group">
-                          <label for="email">Email address</label>
-                          <input type="email" name="email" class="form-control" id="email" placeholder="Enter email">
-                          <small id="emailHelp" class="form-text">We'll never share your email with anyone else.</small>
-                        </div>
-                        <div class="form-group">
-                          <label for="password">Password</label>
-                          <input type="password" name="password" class="form-control" id="password" placeholder="Password">
-                        </div>
-                        <div class="form-group">
-                            <label for="confirm-password">Confirm Password</label>
-                            <input type="password" name="confirm-password" class="form-control" id="confirm-password" placeholder="Password">
-                        </div>
-                        <button type="button" onclick="checkValidation()" class="btn btn-primary">Submit</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-        
-        <script type="text/javascript">
-            function checkValidation() {
-                let VALIDATION = false;
-                const forms = document.querySelectorAll('form');
-                Array.from(forms[0].elements).forEach((input) => {
-                    if(input.type !== 'button') {
-                        document.getElementById(input.id).style.background = '';
-                        document.getElementById(input.id).style.border = '';
-                        if(!input.value.length) {
-                            document.getElementById(input.id).style.background = '#FDE6D6';
-                            document.getElementById(input.id).style.border = '2px solid red';
-                            VALIDATION = true;
-                        }
-                        else if(input.id === 'email') {
-                            var re = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-                            if(!re.test(input.value)) {
-                                document.getElementById(input.id).style.background = '#FDE6D6';
-                                document.getElementById(input.id+"Help").style.color = 'red';
-                                document.getElementById(input.id).style.border = '2px solid red';
-                                alert("Not a valid email address");
-                                VALIDATION = true;
-                            }
-                        }
-                        else if(input.id === 'confirm-password' && input.value !== document.getElementById("password").value) {
-                            input.style.background = '#FDE6D6';
-                            input.style.border = '2px solid red';
-                            document.getElementById("password").style.background = '#FDE6D6';
-                            document.getElementById("password").style.border = '2px solid red';
-                            alert("password and confirm password doesn't match");
-                            VALIDATION = true;
-                        }
-                    }
-                });
-                
-                if(!VALIDATION) {
-                    alert("form is validated suvccessfully");
-                }
-            }
-        </script>
+    <style>
+        #panel {  
+            padding: 50px;  
+            display: none;  
+        } 
+    </style>
+    <body>  
+        <select id="single">    
+            <option>Single</option>    
+            <option>Double</option>    
+            <option>Triple</option>    
+        </select>    
+        <p></p>  
+       <!-- <button>click me to hide p tag</button> -->
+       <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> 
+       </script>  
+       <script type="text/javascript" language="javascript">  
+            $(function () {  
+                $("select").change(function(){  
+                    $("p").html("selected item: <b>"+$("select").val()+"</b>");
+                    $("b").css({"background-color":"yellow", "padding": "10px", "color": "black"});
+                });  
+            });  
+       </script>  
     </body>
 </html>
