@@ -1,0 +1,40 @@
+
+  
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Training">
+        <title>JS/jQuery - Demo</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#18621A">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+    </head>
+    <style>
+        .image-container {
+            background-color: rosybrown;
+        }
+    </style>
+    <body>
+        <div class="container">
+            <div class="row mt-4">
+                <div class="col-md-8 mx-auto mt-5"> 
+                   <div id="image-container" class="p-4">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTle9xpDPDJE4IKcAK8CXPYaH5Ubvk7pQDRfdy7AjLPgYoqg5L9Qyts61piCBSuO6Ye4Z0&usqp=CAU" 
+                        alt="Good Morning Friends"width="284" height="213"><br>
+                   </div>
+                    <button type="button">expand width</button>  
+                </div>
+            </div>
+        </div> 
+       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+       <script type="text/javascript">
+        $(function() {
+            $("button").click(function() {
+                $('#image-container').toggleClass("image-container");
+            });
+        });
+       </script>
+    </body>
+</html>

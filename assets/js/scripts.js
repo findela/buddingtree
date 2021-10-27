@@ -21,11 +21,18 @@ $(function() {
         if(!VALIDATE) {
             alert('form submitted successfully');
         }
-     }
+    }
+
+
+
+
+
+
 
      // visible toggle function
      $("#toggle-visibility").click(function(){
         let toggleStatus = $(this).siblings('input').attr("type");
+        console.info(toggleStatus);
         if (toggleStatus === 'password') {
             $(this).removeClass("fa-eye").addClass("fa-eye-slash");
         }
