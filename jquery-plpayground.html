@@ -9,6 +9,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="theme-color" content="#18621A">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="/assets/css/toastr.min.css"/>
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
     </head>
     <style>
@@ -20,21 +21,72 @@
         <div class="container">
             <div class="row mt-4">
                 <div class="col-md-8 mx-auto mt-5"> 
-                   <div id="image-container" class="p-4">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTle9xpDPDJE4IKcAK8CXPYaH5Ubvk7pQDRfdy7AjLPgYoqg5L9Qyts61piCBSuO6Ye4Z0&usqp=CAU" 
-                        alt="Good Morning Friends"width="284" height="213"><br>
-                   </div>
-                    <button type="button">expand width</button>  
+                    <h2 class="font-weight-bold mb-3">Registration Form</h2>
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" value="9wwww" name="firstName" class="form-control" placeholder="Enter First Name">
+                                    <small data-validator="firstName" class="text-danger d-none font-weight-bold">
+                                        Not a valid first name
+                                    </small>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" value="9wwww" name="lastName" class="form-control" placeholder="Enter Last Name">
+                                    <small data-validator="lastName" class="text-danger d-none font-weight-bold">
+                                        Not a valid last name
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="email" value="9wwww@gxmail.com" name="email" class="form-control" placeholder="Enter Email">
+                                    <small data-validator="email" class="text-danger d-none font-weight-bold">
+                                        Not a valid email address
+                                    </small>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" value="1299967890" name="mobile" class="form-control" placeholder="Enter Mobile">
+                                    <small data-validator="mobile" class="text-danger d-none font-weight-bold">
+                                        Not a valid mobile
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="password" value="9wwww" id="password" name="password" class="form-control" placeholder="Enter Password">
+                                    <small data-validator="password" class="text-danger d-none font-weight-bold">
+                                        Not a valid password
+                                    </small>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="password" value="9wwww" name="confirm-password" class="form-control" placeholder="Confirm Password">
+                                    <small data-validator="confirm-password" class="text-danger d-none font-weight-bold">
+                                        Not a valid confirm password
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <button type="button" onclick="validateRegistration()" class="btn btn-success w-100">Submit</button>
+                    </form>
                 </div>
             </div>
         </div> 
        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-       <script type="text/javascript">
-        $(function() {
-            $("button").click(function() {
-                $('#image-container').toggleClass("image-container");
-            });
-        });
-       </script>
+       <script src="/assets/js/toastr.min.js"></script>
+       <script src="/assets/js/scripts.js"></script>
     </body>
 </html>
