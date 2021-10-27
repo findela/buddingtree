@@ -16,47 +16,33 @@
             <div class="row mt-4">
                 <div class="col-md-8 mx-auto mt-5"> 
                     <h2>Registration Form</h2>
-                    <form>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input type="text" name="firstName" class="form-control" placeholder="Enter First Name">
-                                    <small data-validator="firstName" class="text-danger d-none font-weight-bold">
-                                        Not a valid first name
-                                    </small>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input type="text" name="lastName" class="form-control" placeholder="Enter Last Name">
-                                    <small data-validator="lastName" class="text-danger d-none font-weight-bold">
-                                        Not a valid last name
-                                    </small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" name="email" class="form-control" placeholder="Enter email">
-                            <small data-validator="email" class="text-danger d-none font-weight-bold">
-                                Not a valid email
-                            </small>
-                        </div>
-                        <div class="form-group position-relative">
-                            <input type="password" name="password" class="form-control" id="password" placeholder="Password">
-                            <i class="fas fa-eye position-absolute"
-                                id="toggle-visibility" style="cursor: pointer; right: 15px; top: 10px;"></i>
-                            <small data-validator="password" class="text-danger d-none font-weight-bold">
-                                Not a valid password
-                            </small>
-                        </div>
-                        <div class="form-group">
-                            <input type="password" name="confirm-password" class="form-control" placeholder="Confirm Password">
-                            <small data-validator="confirm-password" class="text-danger d-none font-weight-bold">
-                                Not a valid confirm password
-                            </small>
-                        </div>
-                        <button type="button" onclick="validateRegistration()" class="btn btn-success w-100">Submit</button>
-                    </form>
+                    <button class="btn btn-primary" onclick="fetchData()">Fetch Data from Server</button>
+                </div>
+                <div class="col-md-12 mt-4">
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Partner</th>
+                            <th scope="col">Code</th>
+                            <th scope="col">Contact</th>
+                            <th scope="col">Activity</th>
+                            <th scope="col">Enrollments</th>
+                            <th scope="col">Last Enrollment</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Last Changed</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <!-- <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                          </tr> -->
+                        </tbody>
+                      </table>
                 </div>
             </div>
         </div> 
