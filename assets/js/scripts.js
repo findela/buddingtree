@@ -1,4 +1,6 @@
 $(function() {
+
+    //fetch data from mock API
     fetchData = function() {
         $(".table tbody").append(
             "<tr>"+
@@ -7,7 +9,7 @@ $(function() {
         )
         $.ajax({
             url : "https://demo7389246.mockable.io/api/v1/imeritone"+"/partner/list",
-            type: "GET",
+            type: "GET", // GET,POST,PATCH,PUT,DELETE
             dataType: "json",
             success: function(data)
             {
@@ -32,6 +34,7 @@ $(function() {
         });
     }
 
+    // for registering an user
     validateRegistration = function () {
         var emailRegex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
         let VALIDATED = false;
@@ -61,7 +64,7 @@ $(function() {
         }
     }
 
-    //registration api to server
+    //request data to server
     requestRegistration = function(requestJSON) {
         toastr.options = {"positionClass": "toast-bottom-center"};
         $.ajax({
@@ -76,7 +79,10 @@ $(function() {
                 });
             },
             error: function (error) {
-                toastr.error(error.responseJSON.message);
+                toastr.error(
+                    error.responseJSON.status === 500 ? 
+                    error.responseJSON.data.sqlMessage : error.responseJSON.message
+                );
             }
         });
     }
