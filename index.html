@@ -1,52 +1,27 @@
 
-  
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="author" content="Training">
-        <title>JS/jQuery - Demo</title>
+        <title>Bootstrap Design Class</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="theme-color" content="#18621A">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+        <link rel="stylesheet" href="/assets/css/style.css"/>
     </head>
     <body>
-        <div class="container">
-            <div class="row mt-4">
-                <div class="col-md-8 mx-auto mt-5"> 
-                    <h2>Registration Form</h2>
-                    <button class="btn btn-primary" onclick="fetchData()">Fetch Data from Server</button>
-                </div>
-                <div class="col-md-12 mt-4">
-                    <table class="table">
-                        <thead>
-                          <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">Partner</th>
-                            <th scope="col">Code</th>
-                            <th scope="col">Contact</th>
-                            <th scope="col">Activity</th>
-                            <th scope="col">Enrollments</th>
-                            <th scope="col">Last Enrollment</th>
-                            <th scope="col">Email</th>
-                            <th scope="col">Status</th>
-                            <th scope="col">Last Changed</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <!-- <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                          </tr> -->
-                        </tbody>
-                      </table>
-                </div>
-            </div>
+        <div class="container d-flex justify-content-start">
+          <h2>Registration Form</h2>
+          <h2>Registration Form</h2>
+          <button class="my-auto position-relative">
+            Fetch Data from Server
+            <i class="fas fa-circle btn-pointer position-absolute text-red-color" style="font-size: 20px;"></i>
+          </button>
+          <button class="my-auto">
+            Fetch Data from Server
+          </button>
         </div> 
-       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-       <script src="/assets/js/scripts.js"></script>
     </body>
 </html>

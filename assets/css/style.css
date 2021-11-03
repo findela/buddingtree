@@ -1,0 +1,42 @@
+.container {
+    width: 50%;
+    margin: 0 auto;
+}
+h2 {
+    font-weight: bold;
+    font-size: 30px;
+}
+button {
+    background-color: blue;
+    padding: 12px;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+}
+.d-flex {
+    display: flex;
+}
+.justify-content-start {
+    justify-content: space-between;
+}
+
+.my-auto {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.position-absolute {
+    position: absolute;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.text-red-color {
+    color: crimson;
+}
+
+.btn-pointer {
+    top: -10px;
+    right: -10px;
+}
